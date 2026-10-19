@@ -54,5 +54,11 @@ namespace ConsoleApp17
         // make class work with types that have base "struct" only
     }
     #endregion
+    #region question7
+    public class classconstrain<T> where T : class
+    {
+        // make class work with types that have base "class" only
+    }
+    #endregion
 }
 
