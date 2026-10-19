@@ -48,5 +48,11 @@ namespace ConsoleApp17
         T Get();
     }
     #endregion
+    #region question6
+    public class structconstrain<T> where T:struct
+    {
+        // make class work with types that have base "struct" only
+    }
+    #endregion
 }
 
