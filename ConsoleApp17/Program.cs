@@ -40,5 +40,13 @@ namespace ConsoleApp17
 
         #endregion
     }
+    #region question5
+    public interface IRepository<T>
+    {
+        // interface that work with different data types
+        void Add(T item);
+        T Get();
+    }
+    #endregion
 }
 
