@@ -60,5 +60,11 @@ namespace ConsoleApp17
         // make class work with types that have base "class" only
     }
     #endregion
+    #region question8
+    public class newconstrain<T> where T : new()
+    {
+        // make class work with types that have base "no parameter constructor" only
+    }
+    #endregion
 }
 
