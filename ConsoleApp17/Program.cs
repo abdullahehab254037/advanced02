@@ -1,4 +1,6 @@
-﻿namespace ConsoleApp17
+﻿using System.Numerics;
+
+namespace ConsoleApp17
 {
     internal class Program
     {
@@ -17,6 +19,25 @@
             a = b; 
             b=temp;
         }
+        #endregion
+        #region question4
+        public static T findmax<T>(T[] items) where T : IComparable<T>, INumber<T>
+        {
+
+            T maxvalue = items[0];
+            for( int i=1;i<items.Length;i++)
+            {
+                if (items[i]>maxvalue)
+                {
+                    maxvalue = items[i];
+                }
+            }
+            return maxvalue;
+
+
+            return default;
+        }
+
         #endregion
     }
 }
