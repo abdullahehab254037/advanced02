@@ -102,4 +102,36 @@ namespace ConsoleApp17
     // multiple constrains must be in this order => primary,secondry,new()
 
     #endregion
+    #region question12,13,14,,15,16,17
+    //The default keyword returns the default value of a type T
+    class SafeList<T>
+    {
+        private List<T> items = new List<T>();
+
+        public void Add(T item)
+        {
+            items.Add(item);
+        }
+
+        public T Get(int index)
+        {
+            if (index < 0 || index >= items.Count)
+                return default(T);
+
+            return items[index];
+        }
+    }
+    //Covariance allows a generic type to use a more derived type than the specified type parameter.
+    //The out keyword is used when a type parameter is returned as output.
+
+
+    //Contravariance allows a generic type to use a less derived type than the specified type parameter.
+    //The in keyword is used when a type parameter is accepted as input.
+
+    //Covariance (out) preserves the direction of inheritance, allowing a more derived type.
+    //Contravariance (in) reverses the direction, allowing a less derived type.
+
+    //  generic static can work with any type of classes
+    #endregion
+
 }
