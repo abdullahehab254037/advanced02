@@ -6,8 +6,8 @@ namespace ConsoleApp17
     {
         static void Main(string[] args)
         {
-            
-            
+
+
         }
     }
     public class generic<T>
@@ -16,8 +16,8 @@ namespace ConsoleApp17
         public static void swap(ref T a, ref T b)
         {   // generic method is method that can handle any type of attributes
             T temp = a;
-            a = b; 
-            b=temp;
+            a = b;
+            b = temp;
         }
         #endregion
         #region question4
@@ -25,9 +25,9 @@ namespace ConsoleApp17
         {
 
             T maxvalue = items[0];
-            for( int i=1;i<items.Length;i++)
+            for (int i = 1; i < items.Length; i++)
             {
-                if (items[i]>maxvalue)
+                if (items[i] > maxvalue)
                 {
                     maxvalue = items[i];
                 }
@@ -49,7 +49,7 @@ namespace ConsoleApp17
     }
     #endregion
     #region question6
-    public class structconstrain<T> where T:struct
+    public class structconstrain<T> where T : struct
     {
         // make class work with types that have base "struct" only
     }
@@ -72,7 +72,7 @@ namespace ConsoleApp17
         // T must impelemnt the interface
         public void Add(T item)
         {
-            
+
         }
 
         public T Get()
@@ -81,5 +81,18 @@ namespace ConsoleApp17
         }
     }
     #endregion
-}
+    #region question 10
+    class Animal
+    {
+    }
 
+    class Dog : Animal
+    {
+    }
+    class baseclass<T> where T:Animal
+    {
+    }
+
+
+    #endregion
+    }
