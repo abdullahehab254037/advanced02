@@ -66,5 +66,20 @@ namespace ConsoleApp17
         // make class work with types that have base "no parameter constructor" only
     }
     #endregion
+    #region question 9
+    public class gen<T> : IRepository<T>
+    {
+        // T must impelemnt the interface
+        public void Add(T item)
+        {
+            
+        }
+
+        public T Get()
+        {
+            return default;
+        }
+    }
+    #endregion
 }
 
