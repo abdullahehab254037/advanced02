@@ -95,4 +95,11 @@ namespace ConsoleApp17
 
 
     #endregion
+    #region question11
+    class baseclass2<T> where T : class,IRepository<T>,new()
+    {
     }
+    // multiple constrains must be in this order => primary,secondry,new()
+
+    #endregion
+}
